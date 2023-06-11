@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Puja - Puja Tent House </title>
+    <title>Puja Tent House & Catering Serices</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -425,7 +425,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-4 wow fadeInUp" data-wow-delay="0.1s" id="testimonials">
+    <!-- <div class="container-xxl py-4 wow fadeInUp" data-wow-delay="0.1s" id="testimonials">
         <div class="container">
             <div class="section-title text-center">
                 <h1 class="display-5 mb-5">Testimonial</h1>
@@ -466,7 +466,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 
@@ -519,7 +519,6 @@
     </div>
     <!-- Quote End -->
 
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-3 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -549,7 +548,6 @@
                     <a class="btn btn-link" href="">About Us</a>
                     <a class="btn btn-link" href="">Contact Us</a>
                     <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">Support</a>
                 </div>
             </div>
@@ -558,11 +556,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        &copy; <a class="border-bottom" href="#">Puja Tent House</a>, All Right Reserved.
                     </div>
                 </div>
             </div>
@@ -572,7 +566,40 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a> -->
+
+    <!-- Messenger Chat plugin Code Start-->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById( 'fb-customer-chat' );
+        chatbox.setAttribute( "page_id", "110540695401314" );
+        chatbox.setAttribute( "attribution", "biz_inbox" );
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init( {
+                xfbml: true,
+                version: 'v17.0'
+            } );
+        };
+
+        ( function ( d, s, id ) {
+            var js, fjs = d.getElementsByTagName( s )[0];
+            if ( d.getElementById( id ) ) return;
+            js = d.createElement( s ); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore( js, fjs );
+        }( document, 'script', 'facebook-jssdk' ) );
+    </script>
+    <!-- Messenger Chat plugin Code End-->
+
 
 
     <!-- JavaScript Libraries -->
