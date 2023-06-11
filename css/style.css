@@ -1,7 +1,7 @@
 /********** Template CSS #AB7442**********/
 :root {
-    --primary: #FC118A;
-    --light: #F5F5F5;
+    --primary: #fc118a;
+    --light: #f5f5f5;
     --dark: #353535;
 }
 
@@ -20,36 +20,34 @@
 .back-to-top {
     position: fixed;
     display: none;
-    right: 45px;
+    left: 45px;
     bottom: 45px;
     z-index: 99;
 }
-
 
 /*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
     z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
 }
 
-
 /*** Button ***/
 .btn {
     font-weight: 500;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .btn-square {
@@ -80,8 +78,8 @@
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
@@ -90,7 +88,7 @@
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
@@ -103,13 +101,13 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-light .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
 
     .navbar-light .navbar-nav {
-        border-top: 1px solid #EEEEEE;
+        border-top: 1px solid #eeeeee;
     }
 }
 
@@ -125,7 +123,7 @@
 
 .navbar-light.sticky-top {
     top: -100px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 @media (min-width: 992px) {
@@ -136,17 +134,16 @@
         top: 150%;
         opacity: 0;
         visibility: hidden;
-        transition: .5s;
+        transition: 0.5s;
     }
 
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
         visibility: visible;
-        transition: .5s;
+        transition: 0.5s;
         opacity: 1;
     }
 }
-
 
 /*** Header ***/
 @media (max-width: 768px) {
@@ -154,7 +151,7 @@
         position: relative;
         min-height: 500px;
     }
-    
+
     .header-carousel .owl-carousel-item img {
         position: absolute;
         width: 100%;
@@ -192,11 +189,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: #ffffff;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     font-size: 22px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .header-carousel .owl-nav .owl-prev:hover,
@@ -223,19 +220,19 @@
     width: 15px;
     height: 15px;
     background: transparent;
-    border: 1px solid #FFFFFF;
-    transition: .5s;
+    border: 1px solid #ffffff;
+    transition: 0.5s;
 }
 
 .header-carousel .owl-dot::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 5px;
     height: 5px;
     top: 4px;
     left: 4px;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
 }
 
 .header-carousel .owl-dot.active {
@@ -244,14 +241,14 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(53, 53, 53, 0.7), rgba(53, 53, 53, 0.7)),
+        url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
 }
-
 
 /*** Section Title ***/
 .section-title h1 {
@@ -267,7 +264,7 @@
 .section-title h1::before,
 .section-title h1::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 45px;
     height: 5px;
     bottom: 0;
@@ -286,30 +283,28 @@
     display: none;
 }
 
-
 /*** About ***/
 @media (min-width: 992px) {
     .container.about {
         max-width: 100% !important;
     }
 
-    .about-text  {
-        padding-right: calc(((100% - 960px) / 2) + .75rem);
+    .about-text {
+        padding-right: calc(((100% - 960px) / 2) + 0.75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .about-text  {
-        padding-right: calc(((100% - 1140px) / 2) + .75rem);
+    .about-text {
+        padding-right: calc(((100% - 1140px) / 2) + 0.75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .about-text  {
-        padding-right: calc(((100% - 1320px) / 2) + .75rem);
+    .about-text {
+        padding-right: calc(((100% - 1320px) / 2) + 0.75rem);
     }
 }
-
 
 /*** Facts ***/
 .facts {
@@ -317,10 +312,9 @@
     color: var(--dark);
 }
 
-
 /*** Service ***/
 .service-item img {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .service-item:hover img {
@@ -333,6 +327,11 @@
     object-fit: cover; /* optional, to maintain aspect ratio */
 }
 
+.carousel-img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover; /* optional, to maintain aspect ratio */
+}
 
 /*** Feature ***/
 @media (min-width: 992px) {
@@ -340,23 +339,22 @@
         max-width: 100% !important;
     }
 
-    .feature-text  {
-        padding-left: calc(((100% - 960px) / 2) + .75rem);
+    .feature-text {
+        padding-left: calc(((100% - 960px) / 2) + 0.75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .feature-text  {
-        padding-left: calc(((100% - 1140px) / 2) + .75rem);
+    .feature-text {
+        padding-left: calc(((100% - 1140px) / 2) + 0.75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .feature-text  {
-        padding-left: calc(((100% - 1320px) / 2) + .75rem);
+    .feature-text {
+        padding-left: calc(((100% - 1320px) / 2) + 0.75rem);
     }
 }
-
 
 /*** Project Portfolio ***/
 #portfolio-flters li {
@@ -364,7 +362,7 @@
     font-weight: 500;
     color: var(--dark);
     cursor: pointer;
-    transition: .5s;
+    transition: 0.5s;
     border-bottom: 2px solid transparent;
 }
 
@@ -375,7 +373,7 @@
 }
 
 .portfolio-item img {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .portfolio-item:hover img {
@@ -391,8 +389,8 @@
     height: 0;
     bottom: 0;
     left: 50%;
-    background: rgba(53, 53, 53, .7);
-    transition: .5s;
+    background: rgba(53, 53, 53, 0.7);
+    transition: 0.5s;
 }
 
 .portfolio-item:hover .portfolio-overlay {
@@ -409,51 +407,57 @@
     opacity: 1;
 }
 
-
 /*** Quote ***/
 @media (min-width: 992px) {
     .container.quote {
         max-width: 100% !important;
     }
 
-    .quote-text  {
-        padding-right: calc(((100% - 960px) / 2) + .75rem);
+    .quote-text {
+        padding-right: calc(((100% - 960px) / 2) + 0.75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .quote-text  {
-        padding-right: calc(((100% - 1140px) / 2) + .75rem);
+    .quote-text {
+        padding-right: calc(((100% - 1140px) / 2) + 0.75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .quote-text  {
-        padding-right: calc(((100% - 1320px) / 2) + .75rem);
+    .quote-text {
+        padding-right: calc(((100% - 1320px) / 2) + 0.75rem);
     }
 }
-
 
 /*** Testimonial ***/
 .testimonial-carousel::before {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     left: 0;
     height: 100%;
     width: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
     z-index: 1;
 }
 
 .testimonial-carousel::after {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     right: 0;
     height: 100%;
     width: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
     z-index: 1;
 }
 
@@ -473,8 +477,8 @@
 
 .testimonial-carousel .owl-item .testimonial-text {
     border: 5px solid var(--light);
-    transform: scale(.8);
-    transition: .5s;
+    transform: scale(0.8);
+    transition: 0.5s;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text {
@@ -490,7 +494,7 @@
     display: flex;
     justify-content: space-between;
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s;
     z-index: 1;
 }
 
@@ -504,7 +508,7 @@
     position: relative;
     color: var(--primary);
     font-size: 45px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
@@ -512,34 +516,33 @@
     color: var(--dark);
 }
 
-
 /*** Contact ***/
 @media (min-width: 992px) {
     .container.contact {
         max-width: 100% !important;
     }
 
-    .contact-text  {
-        padding-left: calc(((100% - 960px) / 2) + .75rem);
+    .contact-text {
+        padding-left: calc(((100% - 960px) / 2) + 0.75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .contact-text  {
-        padding-left: calc(((100% - 1140px) / 2) + .75rem);
+    .contact-text {
+        padding-left: calc(((100% - 1140px) / 2) + 0.75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .contact-text  {
-        padding-left: calc(((100% - 1320px) / 2) + .75rem);
+    .contact-text {
+        padding-left: calc(((100% - 1320px) / 2) + 0.75rem);
     }
 }
 
-
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/footer.jpg) center center no-repeat;
+    background: linear-gradient(rgba(53, 53, 53, 0.7), rgba(53, 53, 53, 0.7)),
+        url(../img/footer.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -551,8 +554,8 @@
     align-items: center;
     justify-content: center;
     color: var(--light);
-    border: 1px solid #FFFFFF;
-    transition: .3s;
+    border: 1px solid #ffffff;
+    transition: 0.3s;
 }
 
 .footer .btn.btn-social:hover {
@@ -564,17 +567,17 @@
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .footer .btn.btn-link::before {
     position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     margin-right: 10px;
 }
@@ -588,7 +591,7 @@
 .footer .copyright {
     padding: 25px 0;
     font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+    border-top: 1px solid rgba(256, 256, 256, 0.1);
 }
 
 .footer .copyright a {
